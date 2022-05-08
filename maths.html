@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math object</title>
+</head>
+<body>
+    <script>
+        var a = Math.floor(10.66);
+        var b = Math.log(0);
+        var c = Math.min(0,10);
+        var d = Math.random();
+        // similarly for pow , sqrt
+        document.write("<br> maths floor : " + a);
+        document.write("<br>maths log : " + b);
+        document.write("<br> maths min : " + c);
+        document.write("<br>maths random : " + d);
+
+        // date
+
+        document.write(Date());
+        var dt = new Date();
+        document.write("date : " + dt.getDay()); // starts sun from 0 
+        document.write("<br>getFullYear() : " + dt.getFullYear());
+        document.write("<br> MilliSeconds(): " + dt.getMilliseconds());
+        document.write(" <br>Hours() : " + dt.getHours());
+        document.write(" <br>Minutes() : " + dt.getMinutes());
+        document.write(" <br>getMonth() : " + dt.getMonth());
+        document.write(" <br>Seconds() : " + dt.getSeconds());
+        document.write(" <br>getTime() : " + dt.getTime());
+        // setMonth() setDate() we can do this as well
+    </script>
+</body>
+</html>

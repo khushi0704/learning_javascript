@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <!--form-->
+    <form name = "example">
+        <input type="text" size = "20" name="calculator">
+        <input type="button" name = "B1" value = "calculate" onclick="cal()">
+        <input type = "reset" name = "B2" value = "Reset">
+        Answer : <input type = "text" size="20" name = "answer">
+    </form>
+    <input type="button" value="click me" onclick="confirmation()"></input>
+</body>
+<script>
+   // dialog box
+    function confirmation(){
+        var ans = confirm("click ok to continue !");
+        if(ans){
+            alert("you are being redirected");
+            window.location = "https://www.codechef.com/" ;
+        }
+        else{
+            alert("you clicked on cancel button");
+        }
+    }
+    function cal(){
+        document.example.answer.value = 
+        eval(document.example.calculator.value)
+    }
+</script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript</title>
+</head>
+<body>
+    document.write(c);  <br>
+    <button onclick="myfun()" >Click me</button>
+    <script>
+
+        function myfun(){
+           var str = prompt("Hey , what tech stack are you into ? " , " ");
+           alert("wow , that's cool " + str);
+                }
+      var emp = new Array(5);
+      emp[0] = "java";
+      emp[1] = "php";
+      emp[2] = "android";
+      emp[3] = "iphone";
+      emp.sort(); // sorts according to the ascii value
+      document.write(emp);
+    // functions
+      function sum(){
+          var a=10;
+          var b = 20;
+          document.write(a*b);
+      }
+      sum();
+
+      // strings
+      var str = "javascript";
+      var answer = str.length;
+      document.write(answer);
+
+      // strings
+
+      var str = "javascript";
+      var answer = str.charAt(4);
+    // prints ascii value oft the 4th letter
+      var answer = str.charCodeAt(4);
+    // prints index of  altter
+ //   var answer = str.indexOf(s);  no output
+    var answer = str.indexOf("s");  // no output
+      document.write(answer);
+
+//  string compare
+      var str = new String("mongodb");
+      var ans = str.localeCompare("mon");
+      document.write("localCompare first : " + ans);
+    </script>
+</body>
+</html>

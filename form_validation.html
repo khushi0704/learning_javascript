@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from validation</title>
+</head>
+<body>
+    <form name = "myform" onsubmit="return validation()">
+        Username : <input type="text" value = "" id="user"><span id="username"></span><br></br>
+        Password : <input type = "password" value = "" id="pass"><span id="password"></span><br></br>
+        <input type="submit" value = "Submit">
+    </form>
+    <script>
+        function validation(){
+            var un = document.getElementById("user").value;
+        var ps = document.getElementById("password").value;
+        if(un==""){
+            // null
+            document.getElementById("username").innerHTML="**please fill the username";
+            return false;
+        }
+        if(ps==""){
+            // null
+            document.getElementById("password").innerHTML="**please fill the password";
+            return false;
+        }
+        else{
+            alert("done");
+            return true;
+        }
+        }
+  </script>
+</body>
+</html>
